@@ -27,27 +27,6 @@
                 </h3>
             </div>
         </div>
-        <div class="content pure-u-1 pure-u-md-3-4">
-            <div>
-                <div class="posts">
-                    <h1 class="content-subhead">Azure Websites Survey</h1>
-                    <section class="post">
-                        <header class="post-header">
-                            <h2 class="post-title">Survey</h2>
-                        </header>
-                        <div class="post-description">
-                            <form action="results.php" method="post">
-                                <p>1. What is your favourite Azure Websites feature? <br><input type="text" name="q1" /></p>
-                                <p>2. How would you improve the Azure Websites magic? <br><input type="text" name="q2" /></p>
-                                <p>
-                                    <input type="submit" class="button-secondary pure-button" />
-                                </p>
-                            </form>
-                        </div>
-                    </section>
-                </div>
-            </div>
-        </div>
     </div>
 </body>
 </html>
