@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/grids-responsive-min.css">
     <link rel="stylesheet" href="css/blog.css">
 </head>
+
 <body>
 
     <div id="layout" class="pure-g">
