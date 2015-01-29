@@ -1,8 +1,8 @@
 ﻿@{
-    Layout = null;
+		Layout = null;
 
-    var appSettings = System.Configuration.ConfigurationManager.AppSettings;
-    var backgroundColor = appSettings["background"]== null? "#000000": appSettings["background"];
+		var appSettings = System.Configuration.ConfigurationManager.AppSettings;
+		var backgroundColor = appSettings["background"]== null? "#000000": appSettings["background"];
 }
 
 @using System.Configuration
@@ -13,12 +13,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta name="viewport" content="width=device-width" />
-    <title>AAD Auth Testing</title>
+		<meta name="viewport" content="width=device-width" />
+		<title>AAD Auth Testing</title>
 </head>
 <body style="font-family:Arial; background: @backgroundColor; color:white;">
 <div>
-	<div style="color:white">Deployment Environment: @ConfigurationManager.AppSettings["DEPLOYMENT_ENVIRONMENT"]</div>
+	<div style="color:white">Deployment Environment: &lt;@ConfigurationManager.AppSettings["DEPLOYMENT_ENVIRONMENT"]&gt;</div>
 
 	@{
 		var claimsPrincipal = Thread.CurrentPrincipal as ClaimsPrincipal;
@@ -51,23 +51,23 @@
 		}
 	}
 </div>
-    <br />
-    <div>
-        <div><strong>Raw HTTP Headers</strong></div>
-        <table border="1">
-            <tbody>
-                @{
-                    foreach (string header in this.Request.Headers)
-                    {
-                        <tr>
-                            <td>@header</td>
-                            <td>@this.Request.Headers[header]</td>
-                        </tr>
-                    }
-                }
-            </tbody>
-        </table>
-    </div>
+		<br />
+		<div>
+				<div><strong>Raw HTTP Headers</strong></div>
+				<table border="1">
+						<tbody>
+								@{
+										foreach (string header in this.Request.Headers)
+										{
+												<tr>
+														<td>@header</td>
+														<td>@this.Request.Headers[header]</td>
+												</tr>
+										}
+								}
+						</tbody>
+				</table>
+		</div>
 
 </body>
 </html>
